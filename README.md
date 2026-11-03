@@ -7,26 +7,26 @@ Current milestone: **Phase 2 — face detection and facial landmarks.**
 ## 1. Final architecture
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│                     PySide6 Desktop UI                       │
+┌────────────────────────────────────────────────────────────────────┐
+│                     PySide6 Desktop UI                             │
 │  Dashboard | Live Monitor | Analytics | Timer | History | Settings │
-└───────────────────────────┬─────────────────────────────────┘
+└───────────────────────────┬────────────────────────────────────────┘
                             │ signals / queued frames
-┌───────────────────────────▼─────────────────────────────────┐
+┌───────────────────────────▼──────────────────────────────────┐
 │                    Session / Focus layer                     │
 │  SessionManager  FocusScorer  DistractionEngine  StudyTimer  │
-└───────┬───────────────────────────┬─────────────────────────┘
+└───────┬───────────────────────────┬──────────────────────────┘
         │                           │
-┌───────▼────────┐         ┌────────▼────────┐
-│ SQLite local DB │         │ Optional Supabase│
-│ sessions/events │         │ aggregate sync   │
-└────────────────┘         └─────────────────┘
+┌───────▼────────┐         ┌────────▼─────────┐
+│ SQLite local DB│         │ Optional Supabase│
+│ sessions/events│         │ aggregate sync   │
+└────────────────┘         └──────────────────┘
                             ▲
-┌───────────────────────────┴─────────────────────────────────┐
+┌───────────────────────────┴──────────────────────────────────┐
 │                     Detection pipeline                       │
 │  CameraManager → Face → Head pose / gaze → Eyes → Phone      │
 │  (thread)        MediaPipe     landmarks        EAR   YOLO?  │
-└─────────────────────────────────────────────────────────────┘
+└──────────────────────────────────────────────────────────────┘
 ```
 
 Design rules:
