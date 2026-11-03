@@ -1,0 +1,36 @@
+# FocusForge AI — install with Python 3.11 or 3.12 only.
+# This project is cross-platform: the same Python packages work on both macOS and Windows.
+# 
+# If you switch from Mac to Windows, you do NOT need to change the core requirements.
+# Only these values usually change:
+#   1) ESP32 laptop IP in esp32_focusforge_panel.ino
+#   2) Wi-Fi SSID/password in esp32_focusforge_panel.ino
+#   3) camera device index in config/settings.json or main_ui.py
+#   4) model path if it was saved as a machine-specific absolute path
+#   5) local environment path / venv location
+
+# Core AI stack (Windows and macOS)
+numpy==1.26.4
+opencv-contrib-python==4.11.0.86
+pytest>=8.0.0,<9
+mediapipe==0.10.21
+
+# Desktop app / UI
+PySide6>=6.7.0
+
+# Optional analytics
+# matplotlib>=3.8.0
+
+# Optional cloud sync
+# supabase>=2.0.0
+# python-dotenv>=1.0.0
+
+# Optional phone detection (requires a local YOLO model)
+# ultralytics>=8.0.0
+
+# Notes for switching OS:
+# - No major Python package change is required.
+# - The same package list works on macOS and Windows.
+# - The project should run successfully on Windows after installing the same dependencies.
+# - If camera detection fails, check the webcam index or permission settings.
+# - If Wi-Fi cannot connect, update the SSID/password and the laptop IP address in the ESP32 firmware.

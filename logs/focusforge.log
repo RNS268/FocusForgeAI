@@ -1,0 +1,5 @@
+2026-11-03 06:56:59 | INFO     | focusforge.main | Starting FocusForge AI 0.1.0-phase1
+2026-11-03 07:02:19 | INFO     | focusforge.main | Starting FocusForge AI 0.2.0-phase2
+2026-11-03 07:02:19 | INFO     | focusforge.face | Downloading Face Landmarker model to /Users/Shashank/Desktop/Distraction/FocusForge_AI/models/face_landmarker.task
+2026-11-03 07:02:21 | INFO     | focusforge.face | Saved Face Landmarker model (3758596 bytes)
+2026-11-03 07:07:10 | INFO     | focusforge.main | Starting FocusForge AI 0.2.0-phase2

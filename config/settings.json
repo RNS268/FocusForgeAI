@@ -1,0 +1,33 @@
+{
+  "app": {
+    "name": "FocusForge AI",
+    "version": "0.2.0-phase2"
+  },
+  "camera": {
+    "device_index": 0,
+    "width": 640,
+    "height": 480,
+    "requested_fps": 30,
+    "buffer_size": 1,
+    "reconnect_attempts": 5,
+    "reconnect_delay_seconds": 1.5
+  },
+  "performance": {
+    "fps_smoothing": 0.15
+  },
+  "logging": {
+    "level": "INFO",
+    "directory": "logs"
+  },
+  "privacy": {
+    "save_video_recordings": false
+  },
+  "face": {
+    "model_path": "models/face_landmarker.task",
+    "max_faces": 2,
+    "min_detection_confidence": 0.5,
+    "min_presence_confidence": 0.5,
+    "min_tracking_confidence": 0.5,
+    "draw_landmarks": true
+  }
+}
