@@ -12,21 +12,21 @@ Current state: working local AI pipeline + live ESP32 status bridge + live panel
 │                               │
 │  Webcam + OpenCV              │
 │  Face detection               │
-│  Gaze / attention logic        │
-│  Eye closure / drowsiness      │
+│  Gaze / attention logic       │
+│  Eye closure / drowsiness     │
 │  Focus scoring                │
 │  Status server (JSON)         │
 │  Live video stream (JPEG TCP) │
 └───────────────┬───────────────┘
                 │ Wi-Fi
                 │
-┌───────────────▼───────────────┐
-│ ESP32-S3 N16R8                 │
-│  ILI9341 320x240 TFT           │
+┌───────────────▼─────────────────────┐
+│ ESP32-S3 N16R8                      │
+│  ILI9341 320x240 TFT                │
 │  5 tabs: HOME LIVE LOGS TIMER SETUP │
-│  Reads focus + distraction JSON │
-│  Shows live video feed         │
-└───────────────────────────────┘
+│  Reads focus + distraction JSON     │
+│  Shows live video feed              │
+└─────────────────────────────────────┘
 ```
 
 This architecture keeps the laptop as the inference engine and the ESP32 as the display/control panel.
