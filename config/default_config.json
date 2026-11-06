@@ -1,0 +1,85 @@
+{
+  "camera": {
+    "index": 0,
+    "width": 1280,
+    "height": 720,
+    "fps": 30,
+    "mirror": true,
+    "quality": "balanced"
+  },
+  "detection": {
+    "eye_ear_threshold": 0.21,
+    "drowsy_seconds": 1.5,
+    "blink_window_seconds": 0.5,
+    "excessive_blinks_per_minute": 28,
+    "yawn_mar_threshold": 0.62,
+    "yawn_seconds": 1.0,
+    "looking_away_seconds": 2.0,
+    "head_yaw_threshold": 22.0,
+    "head_pitch_threshold": 18.0,
+    "phone_confidence": 0.45,
+    "phone_persistence_frames": 4,
+    "posture_warning_seconds": 6.0,
+    "absence_seconds": 3.0,
+    "eye_persistence_frames": 3,
+    "hand_persistence_frames": 3,
+    "yawn_persistence_frames": 3,
+    "attention_persistence_frames": 3,
+    "posture_persistence_frames": 3
+  },
+  "audio": {
+    "enabled": true,
+    "muted": false,
+    "master_volume": 0.7,
+    "cooldowns": {
+      "DROWSINESS": 15.0,
+      "PHONE_DETECTED": 10.0,
+      "LOOKING_AWAY": 15.0,
+      "BAD_POSTURE": 20.0,
+      "YAWN": 20.0,
+      "EXCESSIVE_BLINKING": 20.0,
+      "BREAK_START": 30.0,
+      "BREAK_END": 30.0,
+      "FOCUS_RESTORED": 10.0,
+      "FOCUS_STREAK": 30.0
+    },
+    "sounds": {
+      "DROWSINESS": "C:/Projects/study_assistant/assets/sounds/alarm.mp3",
+      "PHONE_DETECTED": "C:/Projects/study_assistant/assets/sounds/paudio.mp3",
+      "LOOKING_AWAY": "C:/Projects/study_assistant/assets/sounds/faudio.mp3",
+      "BAD_POSTURE": "",
+      "YAWN": "",
+      "EXCESSIVE_BLINKING": "",
+      "USER_AWAY": "",
+      "BREAK_START": "",
+      "BREAK_END": "",
+      "FOCUS_RESTORED": "",
+      "FOCUS_STREAK": ""
+    }
+  },
+  "study": {
+    "pomodoro_enabled": false,
+    "study_minutes": 25,
+    "break_minutes": 5,
+    "auto_pause": true,
+    "auto_start_break": false,
+    "auto_resume_after_break": false
+  },
+  "ui": {
+    "theme": "dark",
+    "hud_mode": "standard",
+    "animation_intensity": 0.75,
+    "developer_mode": false,
+    "show_face_landmarks": true,
+    "show_eye_tracking": true,
+    "show_hand_tracking": true,
+    "show_phone_box": true,
+    "show_status_text": true,
+    "show_fps": true,
+    "show_detection_confidence": true
+  },
+  "first_run_complete": true,
+  "calibration": {
+    "completed_at": 1793967878.5671375
+  }
+}
